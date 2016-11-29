@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New Year</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/my_style.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript-->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/all-script.min.js"></script>
+</head>
+<body>
+    <header class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <nav class="collapse navbar-collapse" id="main-nav">
+                <ul id="menu-main-menu" class="nav navbar-nav navbar-right">
+                    <li><a title="Benefit" href="#">Benefit</a></li>
+                    <li><a title="Expret opinion" href="#">Expret opinion</a></li>
+                    <li><a title="Features" href="#">Features</a></li>
+                    <li><a title="Reviews" href="#">Reviews</a></li>
+                    <li><a title="Order" href="#">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="image-header">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h1>New Year's Songs</h1>
+                    <ul class="item-list">
+                        <li>Winter World Of Love
+                            <span id="mWinter" class="glyphicon glyphicon-play"></span>
+                            <audio id="c1" src="images/2.mp3"></audio>
+                        </li>
+                        <li>Let It Snow
+                            <span id="mSnow" class="glyphicon glyphicon-play"></span>
+                            <audio id="c2" src="images/3.mp3"></audio>
+                        </li>
+                        <li>I Wish You a Merry Christmas
+                            <span id="mColl" class="glyphicon glyphicon-play"></span>
+                            <audio id="c3" src="images/4.mp3"></audio>
+                        </li>
+                        <li id="mFlue">Christmas
+                            <span id="mCrist" class="glyphicon glyphicon-play"></span>
+                            <audio id="c4" src="images/5.mp3"></audio>
+                        </li>
+                    </ul>
+                    <form action="" name="owerfolov">
+                        <label>Until the New Year remains</label>
+                        <label id="time"></label>
+                        <select name="country">
+                            <option>Ukraine</option>
+                        </select>
+                        <a class="btn btn-primary">WHEN?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
