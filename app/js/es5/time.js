@@ -51,6 +51,64 @@ var get_timer = function get_timer() {
         soundClick();
     }
 };
+
 window.onload = function () {
     get_timer();
+
+    var flag = 0;
+    $('.btn-primary').click(function () {
+        switch (flag) {
+            case 0:
+                $('#time').css('color', 'red');flag++;break;
+            case 1:
+                $('#time').css('color', 'blue');flag++;break;
+            case 2:
+                $('#time').css('color', 'green');flag = 0;
+        }
+    });
+
+    var play = 0;
+    $('#mWinter').click(function () {
+        $('#mWinter').toggleClass('glyphicon-pause');
+        if (play == 0) {
+            document.getElementById('c1').play();
+            play++;
+        } else if (play == 1) {
+            document.getElementById('c1').pause();
+            play = 0;
+        }
+    });
+    var play2 = 0;
+    $('#mSnow').click(function () {
+        $('#mSnow').toggleClass('glyphicon-pause');
+        if (play2 == 0) {
+            document.getElementById('c2').play();
+            play2++;
+        } else if (play2 == 1) {
+            document.getElementById('c2').pause();
+            play2 = 0;
+        }
+    });
+    var play3 = 0;
+    $('#mColl').click(function () {
+        $('#mColl').toggleClass('glyphicon-pause');
+        if (play3 == 0) {
+            document.getElementById('c3').play();
+            play3++;
+        } else if (play3 == 1) {
+            document.getElementById('c3').pause();
+            play3 = 0;
+        }
+    });
+    var play4 = 0;
+    $('#mCrist').click(function () {
+        $('#mCrist').toggleClass('glyphicon-pause');
+        if (play4 == 0) {
+            document.getElementById('c4').play();
+            play4++;
+        } else if (play4 == 1) {
+            document.getElementById('c4').pause();
+            play4 = 0;
+        }
+    });
 };
