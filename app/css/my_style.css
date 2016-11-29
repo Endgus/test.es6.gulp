@@ -39,7 +39,10 @@
       color: #00b3ee;
       list-style-type: none;
       padding-top: 5px;
-      cursor: pointer; }
+      cursor: pointer;
+      transition-property: background-color, color;
+      transition-duration: 0.7s;
+      transition-timing-function: ease-in; }
     .image-header .item-list li:before {
       content: '- '; }
     .image-header .item-list li:hover {
@@ -82,6 +85,11 @@
     margin-top: 10px;
     margin-right: 0;
     margin-left: 0; }
+
+@keyframes backgr {
+  from { }
+  to {
+    color: red; } }
 
 @media screen and (max-width: 767px) {
   header {

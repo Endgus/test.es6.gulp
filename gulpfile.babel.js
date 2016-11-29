@@ -50,7 +50,7 @@ gulp.task('img', () => {
 gulp.task('sass', () => {
     return gulp.src('app/sass/*.+(scss|sass)')
         .pipe(sass())
-        .pipe(autoprefixer(['last 5 versions']))
+        .pipe(autoprefixer(['last 3 versions']))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream:true}));
 });

@@ -44,6 +44,9 @@
       list-style-type: none;
       padding-top: 5px;
       cursor: pointer;
+      transition-property: background-color, color;
+      transition-duration: 0.7s;
+      transition-timing-function: ease-in;
     }
     li:before{
       content: '- ';
@@ -96,6 +99,14 @@
     margin-top: 10px;
     margin-right: 0;
     margin-left: 0;
+  }
+}
+@keyframes backgr {
+  from{
+
+  }
+  to{
+    color: red;
   }
 }
 @media screen and (max-width: 767px){

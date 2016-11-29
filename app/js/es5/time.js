@@ -72,43 +72,43 @@ window.onload = function () {
         $('#mWinter').toggleClass('glyphicon-pause');
         if (play == 0) {
             document.getElementById('c1').play();
-            play++;
+            play = 1;
         } else if (play == 1) {
             document.getElementById('c1').pause();
             play = 0;
         }
     });
-    var play2 = 0;
+    var play1 = 0;
     $('#mSnow').click(function () {
         $('#mSnow').toggleClass('glyphicon-pause');
-        if (play2 == 0) {
+        if (play1 == 0) {
             document.getElementById('c2').play();
-            play2++;
-        } else if (play2 == 1) {
+            play1 = 1;
+        } else if (play1 == 1) {
             document.getElementById('c2').pause();
+            play1 = 0;
+        }
+    });
+    var play2 = 0;
+    $('#mColl').click(function () {
+        $('#mColl').toggleClass('glyphicon-pause');
+        if (play2 == 0) {
+            document.getElementById('c3').play();
+            play2 = 1;
+        } else if (play2 == 1) {
+            document.getElementById('c3').pause();
             play2 = 0;
         }
     });
     var play3 = 0;
-    $('#mColl').click(function () {
-        $('#mColl').toggleClass('glyphicon-pause');
-        if (play3 == 0) {
-            document.getElementById('c3').play();
-            play3++;
-        } else if (play3 == 1) {
-            document.getElementById('c3').pause();
-            play3 = 0;
-        }
-    });
-    var play4 = 0;
     $('#mCrist').click(function () {
         $('#mCrist').toggleClass('glyphicon-pause');
-        if (play4 == 0) {
+        if (play3 == 0) {
             document.getElementById('c4').play();
-            play4++;
-        } else if (play4 == 1) {
+            play3 = 1;
+        } else if (play3 == 1) {
             document.getElementById('c4').pause();
-            play4 = 0;
+            play3 = 0;
         }
     });
 };
