@@ -20,8 +20,9 @@ function checkTime(i)
 }
 startTime();
 */
+let globalYear = new Date().getFullYear()+1;// переводим конец таймера на следующий год
 let get_timer = () => {
-    let finish = new Date(2017, 0, 1);
+    let finish = new Date(globalYear, 0, 1);
     let start = new Date();
     if(finish > start){
         let newTime = finish - start;
@@ -39,8 +40,8 @@ let get_timer = () => {
         }
         document.getElementById('time').innerHTML = hours +" : " + minut + " : " + sec;
         setTimeout(get_timer, 1000);
-    }else {
-        alert ('С Новым Годом!!! ');
+    }else{
+        alert (`С Новым ${globalYear} Годом!!!`);
         let soundClick = () => {
             var audio = new Audio(); // Создаём новый элемент Audio
             audio.src = 'images/1.mp3'; // Указываем путь к звуку "клика"

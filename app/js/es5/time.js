@@ -22,8 +22,9 @@ function checkTime(i)
 }
 startTime();
 */
+var globalYear = new Date().getFullYear() + 1; // переводим конец таймера на следующий год
 var get_timer = function get_timer() {
-    var finish = new Date(2017, 0, 1);
+    var finish = new Date(globalYear, 0, 1);
     var start = new Date();
     if (finish > start) {
         var newTime = finish - start;
@@ -42,7 +43,7 @@ var get_timer = function get_timer() {
         document.getElementById('time').innerHTML = hours + " : " + minut + " : " + sec;
         setTimeout(get_timer, 1000);
     } else {
-        alert('С Новым Годом!!! ');
+        alert('\u0421 \u041D\u043E\u0432\u044B\u043C ' + globalYear + ' \u0413\u043E\u0434\u043E\u043C!!!');
         var soundClick = function soundClick() {
             var audio = new Audio(); // Создаём новый элемент Audio
             audio.src = 'images/1.mp3'; // Указываем путь к звуку "клика"
