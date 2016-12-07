@@ -11,8 +11,12 @@
     background-color: red; }
 
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color: red;
   font-weight: bold; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: silver;
+  box-shadow: 0 5px 5px 5px snow; }
 
 .image-header {
   background-image: url(../images/new-year.jpg);
