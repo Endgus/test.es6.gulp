@@ -1,0 +1,61 @@
+.image-header {
+  padding-top: 20px; }
+  .image-header img {
+    padding-bottom: 15px; }
+
+.navigation {
+  background-color: skyblue;
+  padding: 5px 10px;
+  font-size: 16pt; }
+  .navigation a {
+    text-decoration: none;
+    padding: 5px 12px;
+    transition-property: background-color,color;
+    transition-duration: .4s;
+    transition-timing-function: ease-in; }
+  .navigation a:hover {
+    color: #2b669a;
+    background-color: gold; }
+  .navigation span {
+    background-color: #f44336;
+    padding: 5px 10px; }
+
+.box-post {
+  color: blue;
+  border-radius: 22px;
+  background-color: rosybrown;
+  padding-bottom: 15px;
+  background-clip: content-box; }
+
+@media screen and (max-width: 992px) {
+  .image-header {
+    height: 100% !important; } }
+
+/*Animate style START*/
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both; }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInLeft {
+  animation-name: fadeInLeft; }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInRight {
+  animation-name: fadeInRight; }
+
+/*Animate style FINISH*/
